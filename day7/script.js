@@ -9,4 +9,15 @@ function takeDamage() {
 
 healthText.innerText = playerHealth;
 
+if(playerHealth > 0)
+{
+
+    healthText.innerText = playerHealth;
+    statusText.innerText = "You've Been Hit";
+}
+else
+{
+healthText.innerText = 0;
+statusText.innerText = "Game Over!"
+}
 }
