@@ -11,7 +11,6 @@ healthText.innerText = playerHealth;
 
 if(playerHealth > 0)
 {
-
     healthText.innerText = playerHealth;
     statusText.innerText = "You've Been Hit";
 }
