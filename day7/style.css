@@ -8,7 +8,7 @@ transition: background-color 0.3s;
 }
 
 #player-card {
-background-color:aqua;
+background-color:darkgreen;
 border:2px solid wheat;
 border-radius:10px;
 width:300px;
