@@ -10,7 +10,7 @@ function withdraw() {
 
 healthText.innerText = playerHealth;
 
-if(playerHealth < 1000)
+if(playerHealth < 0)
 {
     healthText.innerText = playerHealth;
     statusText.innerText = "Money Withdrawn";
