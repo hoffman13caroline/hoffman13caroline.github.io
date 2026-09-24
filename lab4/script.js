@@ -19,13 +19,14 @@ if(playerHealth - withdrawAmount)
 else
 {
 healthText.innerText = 0;
-document.querySelector(button id="subtract").disabled = true;
-document.querySelector(button id="subtract").innerText = "Add Money";
 statusText.innerText = "No Balance";
 statusText.style.color = "#f9331d";
 statusText.style.fontWeight = "bold";
 
 document.body.style.backgroundColor = "#2f4f4f";
+
+document.querySelector(button id="subtract").disabled = true;
+document.querySelector(button id="subtract").innerText = "Add Money";
 }
 }
 
