@@ -25,8 +25,8 @@ statusText.style.fontWeight = "bold";
 
 document.body.style.backgroundColor = "#2f4f4f";
 
-document.querySelector("button").disabled = true;
-document.querySelector("button").innerText = "No Money to Withdraw";
+document.querySelector("subtract").disabled = true;
+document.querySelector("subtract").innerText = "No Money to Withdraw";
 }
 }
 
