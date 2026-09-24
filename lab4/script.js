@@ -11,10 +11,10 @@ function withdraw() {
 healthText.innerText = playerHealth;
 
 
-if(playerHealth > 0)
+if(playerHealth < 1000)
 {
     healthText.innerText = playerHealth;
-    statusText.innerText = "-$100";
+    statusText.innerText = "Money Withdrawn";
 }
 else
 {
@@ -35,6 +35,12 @@ function deposit() {
 
     const healthText = document.getElementById("health-display");
     const statusText = document.getElementById("status-message");
+
+if(playerHealth > 1000)
+{
+    healthText.innerText = playerHealth;
+    statusText.innerText = "Money Deposited";
+}
 
 healthText.innerText = playerHealth;
 }
