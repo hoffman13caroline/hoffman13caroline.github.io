@@ -25,8 +25,8 @@ statusText.style.fontWeight = "bold";
 
 document.body.style.backgroundColor = "#2f4f4f";
 
-document.querySelector(button id = "subtract").disabled = true;
-document.querySelector(button id = "subtract").innerText = "No Money to Withdraw";
+document.querySelector(id = "subtract").disabled = true;
+document.querySelector(id = "subtract").innerText = "No Money to Withdraw";
 }
 }
 
@@ -36,6 +36,7 @@ function deposit() {
     const healthText = document.getElementById("health-display");
     const statusText = document.getElementById("status-message");
 const button = document.getElementById("add");
+
 if(playerHealth + depositAmount)
 {
     healthText.innerText = playerHealth;
