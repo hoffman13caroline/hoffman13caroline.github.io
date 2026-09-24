@@ -19,7 +19,7 @@ if(playerHealth - withdrawAmount)
 else
 {
 healthText.innerText = 0;
-statusText.innerText = 0;
+statusText.innerText = "No Blance";
 statusText.style.color = "#f9331d";
 statusText.style.fontWeight = "bold";
 
@@ -41,6 +41,18 @@ if(playerHealth + depositAmount)
     healthText.innerText = playerHealth;
     statusText.innerText = "Money Deposited";
 }
+else
+{
+healthText.innerText = 0;
+statusText.innerText = "No Balance";
+statusText.style.color = "#f9331d";
+statusText.style.fontWeight = "bold";
 
+document.body.style.backgroundColor = "#2f4f4f";
+
+document.querySelector("subtract").disabled = true;
+document.querySelector("subtract").innerText = "Please Deposit Money";
+}
+}
 healthText.innerText = playerHealth;
 }
