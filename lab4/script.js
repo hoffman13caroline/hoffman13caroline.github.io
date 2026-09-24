@@ -2,7 +2,7 @@ let playerHealth = 1000;
 const withdrawAmount = 100;
 const depositAmount = 100;
 
-function withdraw() {
+function takeWithdraw() {
     playerHealth = playerHealth - withdrawAmount;
 
     const healthText = document.getElementById("health-display");
@@ -26,11 +26,11 @@ statusText.style.fontWeight = "bold";
 document.body.style.backgroundColor = "#2f4f4f";
 
 document.querySelector("subtract").disabled = true;
-document.querySelector("subtract").innerText = "No Money to Withdraw";
+document.querySelector("subtract").innerText = "Add Money";
 }
 }
 
-function deposit() {
+function takeDeposit() {
     playerHealth = playerHealth + depositAmount;
 
     const healthText = document.getElementById("health-display");
