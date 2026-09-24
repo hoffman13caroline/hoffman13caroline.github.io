@@ -7,7 +7,7 @@ function withdraw() {
 
     const healthText = document.getElementById("health-display");
     const statusText = document.getElementById("status-message");
-
+const button = document.getElementById("subtract");
 healthText.innerText = playerHealth;
 
 
@@ -19,14 +19,14 @@ if(playerHealth - withdrawAmount)
 else
 {
 healthText.innerText = 0;
-statusText.innerText = "No Balance - $0";
+statusText.innerText = 0;
 statusText.style.color = "#f9331d";
 statusText.style.fontWeight = "bold";
 
-document.body.style.backgroundColor = "#5a1a1a";
+document.body.style.backgroundColor = "#2f4f4f";
 
 document.querySelector("button").disabled = true;
-document.querySelector("button").innerText = "Dead";
+document.querySelector("button").innerText = "No Money to Withdraw";
 }
 }
 
@@ -35,7 +35,7 @@ function deposit() {
 
     const healthText = document.getElementById("health-display");
     const statusText = document.getElementById("status-message");
-
+const button = document.getElementById("add");
 if(playerHealth + depositAmount)
 {
     healthText.innerText = playerHealth;

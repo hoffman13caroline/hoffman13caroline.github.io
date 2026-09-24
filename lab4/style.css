@@ -2,7 +2,7 @@ body {
 font-family: Arial, Helvetica, sans-serif;
 text-align:center;
 margin-top:50px;
-background-color: darkslategray;
+background-color: #2f4f4f;
 color: white;
 transition: background-color 0.3s;
 }
