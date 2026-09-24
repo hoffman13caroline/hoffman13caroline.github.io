@@ -16,6 +16,18 @@ if(playerHealth < 1000)
     statusText.innerText = "Money Withdrawn";
 }
 }
+else
+{
+healthText.innerText = 0;
+statusText.innerText = 0;
+statusText.style.color = "#f9331d";
+statusText.style.fontWeight = "bold";
+
+document.body.style.backgroundColor = "#5a1a1a";
+
+document.querySelector("button").disabled = true;
+document.querySelector("button").innerText = "No Balance $0";
+}
 
 function deposit() {
     playerHealth = playerHealth + depositAmount;
