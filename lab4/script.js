@@ -25,8 +25,8 @@ statusText.style.fontWeight = "bold";
 
 document.body.style.backgroundColor = "#2f4f4f";
 
-document.querySelector(button id="subtract").disabled = true;
-document.querySelector(button id="subtract").innerText = "Add Money";
+document.querySelector("button").disabled = true;
+document.querySelector("button").innerText = "Add Money";
 }
 }
 
