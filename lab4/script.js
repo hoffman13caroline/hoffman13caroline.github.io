@@ -14,12 +14,12 @@ healthText.innerText = playerHealth;
 if(playerHealth > 0)
 {
     healthText.innerText = playerHealth;
-    statusText.innerText = "You've Been Hit";
+    statusText.innerText = "-$100";
 }
 else
 {
 healthText.innerText = 0;
-statusText.innerText = "Game Over!";
+statusText.innerText = "No Balance - $0";
 statusText.style.color = "#f9331d";
 statusText.style.fontWeight = "bold";
 
@@ -37,3 +37,4 @@ function deposit() {
     const statusText = document.getElementById("status-message");
 
 healthText.innerText = playerHealth;
+}
