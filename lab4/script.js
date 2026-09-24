@@ -13,6 +13,18 @@ if(playerHealth < 1000)
 {
     healthText.innerText = playerHealth;
     statusText.innerText = "Money Withdrawn";
+ else
+{
+healthText.innerText = 0;
+statusText.innerText = "No Balance $0";
+statusText.style.color = "#f9331d";
+statusText.style.fontWeight = "bold";
+
+document.body.style.backgroundColor = "#5a1a1a";
+
+document.querySelector("button").disabled = true;
+document.querySelector("button").innerText = "No Balance $0";
+}
 }
 }
 
@@ -28,16 +40,4 @@ if(playerHealth > 1000)
     statusText.innerText = "Money Deposited";
 }
 healthText.innerText = playerHealth;
-}
-else
-{
-healthText.innerText = 0;
-statusText.innerText = "No Balance $0";
-statusText.style.color = "#f9331d";
-statusText.style.fontWeight = "bold";
-
-document.body.style.backgroundColor = "#5a1a1a";
-
-document.querySelector("button").disabled = true;
-document.querySelector("button").innerText = "No Balance $0";
 }
