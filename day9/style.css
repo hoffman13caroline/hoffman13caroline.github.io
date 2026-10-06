@@ -1,0 +1,95 @@
+/* Overall page */
+body {
+background-color: #000000;
+color: #ffffff;
+font-family: Arial, sans-serif;
+margin: 0;
+padding: 40px 20px;
+text-align: center;
+}
+
+/* Title */
+h1 {
+color: #73000a;
+font-size: 36px;
+margin-bottom: 30px;
+}
+
+/* Text input */
+#newItem {
+padding: 12px;
+width: 300px;
+border: 2px solid #73000a;
+border-radius: 6px;
+font-size: 16px;
+box-sizing: border-box;
+}
+
+/* Add button */
+#addButton {
+padding: 12px 20px;
+margin-left: 8px;
+background-color: #73000a;
+color: white;
+border: 2px solid #73000a;
+border-radius: 6px;
+font-size: 16px;
+cursor: pointer;
+}
+
+#addButton:hover {
+background-color: #99000e;
+}
+
+/* Checklist container */
+#checklistItems {
+list-style: none;
+padding: 0;
+margin: 30px auto;
+width: 90%;
+max-width: 600px;
+}
+
+/* Individual checklist items */
+#checklistItems li {
+background-color: #1a1a1a;
+border: 2px solid #73000a;
+border-radius: 8px;
+padding: 15px;
+margin-bottom: 12px;
+text-align: left;
+font-size: 18px;
+box-sizing: border-box;
+}
+
+/* Checkboxes */
+#checklistItems input[type="checkbox"] {
+width: 18px;
+height: 18px;
+margin-right: 10px;
+accent-color: #73000a;
+vertical-align: middle;
+}
+
+/* Mobile-friendly layout */
+@media (max-width: 600px) {
+#newItem {
+width: 100%;
+margin-bottom: 10px;
+}
+
+#addButton {
+    width: 100%;
+    margin-left: 0;
+}
+
+h1 {
+    font-size: 28px;
+}
+
+#checklistItems {
+    width: 100%;
+}
+
+
+}
