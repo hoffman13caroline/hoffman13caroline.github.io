@@ -1,237 +1,115 @@
-/* =========================
-PAGE BACKGROUND
-========================= */
-
+/* Overall page */
 body {
+background-color: #e8e5e5;
+color: #ffffff;
+font-family: Arial, sans-serif;
 margin: 0;
-min-height: 100vh;
-padding: 50px 20px;
-
-background:
-    radial-gradient(circle at 10% 15%, rgba(115, 0, 10, 0.25), transparent 28%),
-    radial-gradient(circle at 90% 85%, rgba(115, 0, 10, 0.20), transparent 30%),
-    linear-gradient(135deg, #f3eeee, #d8cecc);
-
-color: #222222;
-font-family: Georgia, "Times New Roman", serif;
-box-sizing: border-box;
-
-
+padding: 40px 20px;
+text-align: center;
 }
 
-/* =========================
-MAIN CHECKLIST BOX
-========================= */
-
+/* Main box around everything */
 body {
-display: flex;
-justify-content: center;
-align-items: flex-start;
+min-height: 100vh;
 }
 
-body > h1,
-body > #newItem,
-body > #addButton,
-body > #checklistItems {
-max-width: 650px;
+h1,
+#newItem,
+#addButton,
+#checklistItems {
+max-width: 600px;
+box-sizing: border-box;
 }
 
 /* Title */
 h1 {
-width: 100%;
-box-sizing: border-box;
-
-margin: 0;
-padding: 30px 25px 22px;
-
 background-color: #73000a;
-color: white;
-
-text-align: center;
-font-size: 38px;
-letter-spacing: 1px;
-
-border: 4px solid #111111;
-border-bottom: none;
-
-border-radius: 16px 16px 0 0;
-
-box-shadow: 0 8px 20px rgba(0, 0, 0, 0.20);
-
-
-}
-
-/* =========================
-INPUT AREA
-========================= */
-
-#newItem {
-width: 100%;
-box-sizing: border-box;
-
-margin: 0;
-padding: 18px 20px;
-
-background-color: #ffffff;
-color: #222222;
-
-border: 4px solid #111111;
-border-top: 2px solid #111111;
-border-bottom: none;
-
-border-radius: 0;
-
-font-family: Arial, sans-serif;
-font-size: 16px;
-
-outline: none;
-
-
-}
-
-/* Input focus */
-#newItem:focus {
-background-color: #fffafa;
-border-color: #111111;
-box-shadow: inset 0 0 0 2px #73000a;
-}
-
-/* Placeholder */
-#newItem::placeholder {
-color: #777777;
-}
-
-/* =========================
-ADD BUTTON
-========================= */
-
-#addButton {
-width: 100%;
-box-sizing: border-box;
-
-margin: 0;
-padding: 15px 20px;
-
-background-color: #111111;
 color: #ffffff;
+font-size: 36px;
+margin: 0 auto;
+padding: 25px 20px;
+border: 4px solid #000000;
+border-bottom: 0;
+border-radius: 12px 12px 0 0;
+}
 
-border: 4px solid #111111;
-border-top: none;
-
+/* Text input */
+#newItem {
+padding: 12px;
+width: 600px;
+border: 4px solid #000000;
+border-bottom: 0;
 border-radius: 0;
+font-size: 16px;
+background-color: #ffffff;
+color: #000000;
+}
 
-font-family: Arial, sans-serif;
+/* Add button */
+#addButton {
+padding: 12px 20px;
+width: 600px;
+margin: 0 auto;
+background-color: #000000;
+color: #ffffff;
+border: 4px solid #000000;
+border-radius: 0;
 font-size: 16px;
 font-weight: bold;
-
 cursor: pointer;
-
-transition: background-color 0.2s, color 0.2s;
-
-
 }
 
-/* Button hover */
 #addButton:hover {
 background-color: #73000a;
-color: #ffffff;
 }
 
-/* =========================
-CHECKLIST AREA
-========================= */
-
+/* Checklist container */
 #checklistItems {
-width: 100%;
-max-width: 650px;
-box-sizing: border-box;
-
-margin: 0;
-padding: 25px 30px 30px;
-
-background-color: #ffffff;
-
-border: 4px solid #111111;
-border-top: none;
-
-border-radius: 0 0 16px 16px;
-
 list-style: none;
-
-box-shadow: 0 10px 25px rgba(0, 0, 0, 0.20);
-
-
+padding: 25px 30px 30px;
+margin: 0 auto;
+width: 600px;
+background-color: #ffffff;
+border: 4px solid #000000;
+border-top: 0;
+border-radius: 0 0 12px 12px;
 }
 
-/* =========================
-CHECKLIST ITEMS
-========================= */
-
+/* Individual checklist items */
 #checklistItems li {
-background-color: #f8f8f8;
-
+background-color: #f4f4f4;
+color: #000000;
 border: 2px solid #73000a;
-border-left: 7px solid #73000a;
-
-border-radius: 8px;
-
-padding: 16px;
+border-left: 6px solid #73000a;
+border-radius: 6px;
+padding: 15px;
 margin-bottom: 12px;
-
-color: #222222;
-
 text-align: left;
-
-font-family: Arial, sans-serif;
-font-size: 17px;
-
-box-shadow: 0 2px 5px rgba(0, 0, 0, 0.08);
-
-transition: all 0.2s ease;
-
-
+font-size: 18px;
+box-sizing: border-box;
 }
 
-/* Remove extra space from last item */
+/* Last item */
 #checklistItems li:last-child {
 margin-bottom: 0;
 }
 
-/* Hover effect */
+/* Checklist item hover */
 #checklistItems li:hover {
 background-color: #ffffff;
-border-left-color: #111111;
-
-transform: translateX(3px);
-
-box-shadow: 0 4px 10px rgba(0, 0, 0, 0.12);
-
-
+border-left-color: #000000;
 }
 
-/* =========================
-CHECKBOXES
-========================= */
-
+/* Checkboxes */
 #checklistItems input[type="checkbox"] {
-width: 19px;
-height: 19px;
-
+width: 18px;
+height: 18px;
 margin-right: 10px;
-
-vertical-align: middle;
-
 accent-color: #73000a;
-
-cursor: pointer;
-
-
+vertical-align: middle;
 }
 
-/* =========================
-MOBILE DESIGN
-========================= */
-
+/* Mobile-friendly layout */
 @media (max-width: 600px) {
 
 body {
@@ -239,24 +117,21 @@ body {
 }
 
 h1 {
-    font-size: 29px;
-    padding: 25px 15px 20px;
+    width: 100%;
+    font-size: 28px;
 }
 
 #newItem {
-    padding: 16px;
+    width: 100%;
 }
 
 #addButton {
-    padding: 15px;
+    width: 100%;
 }
 
 #checklistItems {
+    width: 100%;
     padding: 20px;
-}
-
-#checklistItems li {
-    font-size: 16px;
 }
 
 
