@@ -14,7 +14,7 @@ body {
     width: 250px;
     background-color: #340d11;
     color: ivory;
-    padding: 40px;
+    padding: 10px;
     display: flex;
     flex-direction: column;
     gap: 30px;
@@ -23,7 +23,7 @@ body {
 .sidebar h2 {
     margin-top: 0;
     border-bottom: 2px solid ivory;
-    padding-bottom: 10px;
+    padding-bottom: 20px;
 }
 
 .sidebar nav {
@@ -33,7 +33,7 @@ body {
 }
 
 .sidebar button {
-    padding: 15px;
+    padding: 20px;
     background-color: transparent;
     color: ivory;
     border: 1px solid ivory;
@@ -45,7 +45,7 @@ body {
 }
 
 .sidebar button:hover {
-    background-color: rgba(44, 7, 7, 0.296);
+    background-color: rgba(223, 218, 218, 0.296);
 }
 
 .content-area {
