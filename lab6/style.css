@@ -11,19 +11,19 @@ body {
 }
 
 .sidebar {
-    width: 175px;
+    width: 200px;
     background-color: #340d11;
     color: ivory;
-    padding: 10px;
+    padding: 20px;
     display: flex;
     flex-direction: column;
-    gap: 20px;
+    gap: 0px;
 }
 
 .sidebar h2 {
     margin-top: 0;
     border-bottom: 2px solid ivory;
-    padding-bottom: 0px;
+    padding-bottom: 20px;
 }
 
 .sidebar nav {
