@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Dashboard</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+    <div class="dashboard-container">
+        
+        <aside class="sidebar">
+            <h2>Student Portal</h2>
+            <nav>
+                <button onclick="changeContent('dining')">Aceademics</button>
+                <button onclick="changeContent('athletics')">Schedule</button>
+                <button onclick="changeContent('academics')">Advising</button>
+            </nav>
+        </aside>
+
+        <main class="content-area">
+            <div id="dynamic-content">
+                <h2>Welcome to your Student Portal</h2>
+                <p>Use the sidebar to navigate the site.</p>
+            </div>
+        </main>
+        
+    </div>
+    
+    <script src="script.js"></script>
+
+</body>
+</html>
