@@ -11,6 +11,22 @@
         <h2 id="score-display">0 Lines of Code</h2>
         <button id="main-button" onclick="writeCode()">Write Code</button>
     </header>
+
+    <main id="shop">
+        <h3>Hardware Store (Maunaul Upgrade)</h3>
+        <p>Current Click Power : <span id="power-display">1</span></p>
+        <button id="upgrade-button" onclick="buyKeyboard()">
+            Buy New Keyboard (Cost: <span id="cost-display">50</span>)
+        </button>
+
+          <h3>Hiring Department (Auto-Click)</h3>
+        <p>Active Interns: <span id="intern-display">0</span></p>
+        <button id="intern-button" onclick="buyIntern()">
+            Hire Intern (Cost: <span id="cost-inter-display">100</span>)
+        </button>
+    </main>
 </div>
+
+<script src="script.js"></script>
 </body>
 </html>
