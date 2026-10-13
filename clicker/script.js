@@ -33,7 +33,7 @@ function updateScreen() {
     document.getElementById("score-display").innerText = linesOfCode + " Lines of Code";
 
     document.getElementById("power-display").innerText = clickPower;
-    document.getElementById("cost-dsplay").innerText = upgradeCost;
+    document.getElementById("cost-display").innerText = upgradeCost;
 
     document.getElementById("intern-display").innerText = interns;
     document.getElementById("intern-display-cost").innerText = internCost
