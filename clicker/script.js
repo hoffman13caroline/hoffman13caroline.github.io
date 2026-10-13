@@ -9,7 +9,20 @@ function writeCode() {
     updateScreen();
 }
 
+funtion buyKeyboard(){
+    if(linesOfCode >= upgradeCost)
+    {
+        linesOfCode = linesOfCode - upgradeCost;
+        clickPower = clickPower + 1;
+        upgradeCost = upgradeCost * 1.5;
+        updateScreen();
+    }
+}
+
 function updateScreen() {
     document.getElementById("score-display").innerText = linesOfCode + " Lines of Code";
+
+    document.getElementById("power-display").innerText = clickPower;
+    document.getElementById("cost-dsplay").innerText = upgradeCost;
 }
 
