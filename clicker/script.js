@@ -9,7 +9,7 @@ function writeCode() {
     updateScreen();
 }
 
-funtion buyKeyboard(){
+function buyKeyboard(){
     if(linesOfCode >= upgradeCost)
     {
         linesOfCode = linesOfCode - upgradeCost;
@@ -19,7 +19,7 @@ funtion buyKeyboard(){
     }
 }
 
-funtion buyIntern(){
+function buyIntern(){
     if(linesOfCode >= internCost)
     {
         linesOfCode = linesOfCode - internCost;
