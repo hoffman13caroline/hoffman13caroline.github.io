@@ -37,7 +37,7 @@ function startGame()
     moveTarget();
  }
 
- function moveTarget();
+ function moveTarget()
  {
     let randomX = Math.floor(Math.random() * 550);
     let randomY = Math.floor(Math.random() * 350);
