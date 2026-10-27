@@ -24,3 +24,9 @@ function startGame()
     timeLeft--:
     timeDisplay.innerText = timeLeft;
  }
+
+ function hitTarget()
+ {
+    score++;
+    scoreDisplay.innerText = score;
+ }
