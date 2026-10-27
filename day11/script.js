@@ -21,7 +21,7 @@ function startGame()
 }
  function countdown()
  {
-    timeLeft--:
+    timeLeft--;
     timeDisplay.innerText = timeLeft;
  }
 
