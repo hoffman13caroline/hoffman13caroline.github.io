@@ -15,7 +15,7 @@ function startGame()
     scoreDisplay.innerText = score;
 
     startButton.disabled = true;
-    targetElement.style.dsiplay = "block";
+    targetElement.style.display = "block";
 
     timeId = setInterval(countdown,1000);
 }
