@@ -38,7 +38,7 @@ function startGame()
 
  function endGame()
  {
-    clearInterval(timerId);
+    clearInterval(timeId);
 
     targetElement.style.display = "none";
     startButton.disabled = false;
