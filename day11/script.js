@@ -1,5 +1,5 @@
 let score = 0;
-let timeleft = 10;
+let timeLeft = 10;
 let timeId = null;
 
 const timeDisplay = document.getElementbyId("time-display");
@@ -10,7 +10,7 @@ const startButton = document.getElementbyId("start-btn");
 function startGame()
 {
     score = 0;
-    timeleft = 10;
+    timeLeft = 10;
     timeDisplay.innerText = timeLeft;
     scoreDisplay.innerText = score;
 
