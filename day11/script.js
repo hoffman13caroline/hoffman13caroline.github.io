@@ -2,10 +2,10 @@ let score = 0;
 let timeLeft = 10;
 let timeId = null;
 
-const timeDisplay = document.getElementbyId("time-display");
-const scoreDisplay = document.getElementbyId("score-display");
-const targetElement = document.getElementbyId("target");
-const startButton = document.getElementbyId("start-btn");
+const timeDisplay = document.getElementById("time-display");
+const scoreDisplay = document.getElementById("score-display");
+const targetElement = document.getElementById("target");
+const startButton = document.getElementById("start-btn");
 
 function startGame()
 {
@@ -16,4 +16,11 @@ function startGame()
 
     startButton.disabled = true;
     targetElement.style.dsiplay = "block";
+
+    timeId = setInterval(countdown,1000);
 }
+ function countdown()
+ {
+    timeLeft--:
+    timeDisplay.innerText = timeLeft;
+ }
