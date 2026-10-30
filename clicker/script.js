@@ -33,8 +33,8 @@ function buyIntern(){
 function doubleScore(){
     if(linesOfCode >= 5000)
     {
-        linesOfCode = linesOfCode - 5000;
         linesOfCode = linesOfCode * 2;
+        linesOfCode = linesOfCode - 5000;
         updateScreen();
     }
 }
