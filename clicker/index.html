@@ -10,6 +10,7 @@
         <h1>Code Cliker</h1>
         <h2 id="score-display">0 Lines of Code</h2>
         <button id="main-button" onclick="writeCode()">Write Code</button>
+        
     </header>
 
     <main id="shop">
@@ -18,12 +19,21 @@
         <button id="upgrade-button" onclick="buyKeyboard()">
             Buy New Keyboard (Cost: <span id="cost-display">50</span>)
         </button>
+         <button id="double-button" onclick="doubleScore()">
+            Double Score (Cost: 5000)
+        </button>
 
           <h3>Hiring Department (Auto-Click)</h3>
         <p>Active Interns: <span id="intern-display">0</span></p>
         <button id="intern-button" onclick="buyIntern()">
             Hire Intern (Cost: <span id="cost-intern-display">100</span>)
         </button>
+                <p>Active Employees: <span id="employee-display">0</span></p>
+        <button id="employee-button" onclick="buyEmployee()">
+            Hire Employee (Cost: <span id="cost-employee-display">1000</span>)
+        </button>
+
+
     </main>
 </div>
 
