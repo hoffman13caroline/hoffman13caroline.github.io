@@ -31,10 +31,9 @@ function buyIntern(){
     }
 }
 function doubleScore(){
-    if(linesOfCode >= 5000)
+    if(linesOfCode >= 500,000)
     {
         linesOfCode = linesOfCode * 2;
-        linesOfCode = linesOfCode - 5000;
         updateScreen();
     }
 }
