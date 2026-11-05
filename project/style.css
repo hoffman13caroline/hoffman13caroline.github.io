@@ -1,0 +1,53 @@
+        body {
+            font-family: Arial, sans-serif;
+            background-color: lightgray;
+            color: black;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+        .summary-container {
+            background-color: white;
+            padding: 40px;
+            border-radius: 12px;
+            box-shadow: 0 4px 15px dimgray;
+            max-width: 600px;
+            width: 100%;
+        }
+        h1 {
+            color: darkred; /* Garnet-adjacent */
+            margin-top: 0;
+            border-bottom: 2px solid black;
+            padding-bottom: 10px;
+        }
+        .metadata {
+            font-weight: bold;
+            color: dimgray;
+            margin-bottom: 20px;
+        }
+        .section-title {
+            color: darkred;
+            margin-top: 25px;
+            margin-bottom: 5px;
+        }
+        p {
+            line-height: 1.6;
+        }
+        .launch-btn {
+            display: block;
+            text-align: center;
+            background-color: black;
+            color: white;
+            padding: 15px 20px;
+            text-decoration: none;
+            font-size: 18px;
+            font-weight: bold;
+            border-radius: 8px;
+            margin-top: 30px;
+            transition: background-color 0.2s;
+        }
+        .launch-btn:hover {
+            background-color: darkred;
+        }
