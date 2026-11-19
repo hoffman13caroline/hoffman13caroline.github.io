@@ -3,81 +3,41 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Final Project Summary</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            background-color: lightgray;
-            color: black;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            height: 100vh;
-            margin: 0;
-        }
-        .summary-container {
-            background-color: white;
-            padding: 40px;
-            border-radius: 12px;
-            box-shadow: 0 4px 15px dimgray;
-            max-width: 600px;
-            width: 100%;
-        }
-        h1 {
-            color: darkred; /* Garnet-adjacent */
-            margin-top: 0;
-            border-bottom: 2px solid black;
-            padding-bottom: 10px;
-        }
-        .metadata {
-            font-weight: bold;
-            color: dimgray;
-            margin-bottom: 20px;
-        }
-        .section-title {
-            color: darkred;
-            margin-top: 25px;
-            margin-bottom: 5px;
-        }
-        p {
-            line-height: 1.6;
-        }
-        .launch-btn {
-            display: block;
-            text-align: center;
-            background-color: black;
-            color: white;
-            padding: 15px 20px;
-            text-decoration: none;
-            font-size: 18px;
-            font-weight: bold;
-            border-radius: 8px;
-            margin-top: 30px;
-            transition: background-color 0.2s;
-        }
-        .launch-btn:hover {
-            background-color: darkred;
-        }
-    </style>
+
+    <title>SideTracked</title>
+
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
 </head>
+
 <body>
 
-    <div class="summary-container">
-        <h1>Final Project: [Project Title]</h1>
-        
-        <div class="metadata">
-            Developer: [Your Name]<br>
-            Course: Web Design and Development using AI Tools
-        </div>
+    <!-- This banner stays on every page. -->
+    <header>
+        <a href="#home" class="logo">SideTracked ✦</a>
 
-        <h3 class="section-title">Project Overview</h3>
-        <p>[Students write a 3-4 sentence description of what the app does, who it is for, and how they came up with the idea.]</p>
+        <nav aria-label="Main navigation">
+            <a href="#home" data-page="home">Home</a>
+            <a href="#playlists" data-page="playlists">All Playlists</a>
+            <a href="#artists" data-page="artists">Artists</a>
+            <a href="#genres" data-page="genres">Genres</a>
+            <a href="#random" data-page="random" class="random-link">
+                Random playlist Rec
+            </a>
+        </nav>
+    </header>
 
-        <h3 class="section-title">AI Audit & Development Notes</h3>
-        <p>[Students write a brief reflection on how they used AI. What prompts did they use? What bugs did the AI introduce that they had to manually fix using their knowledge of loops, and variables?]</p>
+    <!-- JavaScript changes the contents of this area. -->
+    <main id="content"></main>
 
-        <a href="final_project/index.html" class="launch-btn">Launch Project</a>
-    </div>
+    <footer>
+        <p>SideTracked — a soundtrack for whatever you're doing.</p>
+        <p>Listen through Spotify.</p>
+    </footer>
+
+    <noscript>
+        Please enable JavaScript to use SideTracked.
+    </noscript>
 
 </body>
 </html>
